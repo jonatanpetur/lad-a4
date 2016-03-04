@@ -19,7 +19,7 @@ public class WordCount {
     static void countWords(String path, int capacity){
         CountingFilter cf = new CountingFilterImpl(capacity);
         try{
-            Scanner sc = new Scanner(new FileInputStream(path)).useDelimiter("[ ,!?.:;]+");
+            Scanner sc = new Scanner(new FileInputStream(path)).useDelimiter("[ ,!?.:;\n]+");
             int n = 0;
             while (sc.hasNext()){
                 cf.add(sc.next().toLowerCase());
