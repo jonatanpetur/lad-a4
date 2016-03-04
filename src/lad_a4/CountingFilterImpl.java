@@ -11,7 +11,7 @@ public class CountingFilterImpl implements CountingFilter {
     }
 
     public void add(int e) {
-        filter[e % filter.length]++;
+        filter[getIndex(e)]++;
     }
 
     public void add(Object e) {
@@ -19,7 +19,7 @@ public class CountingFilterImpl implements CountingFilter {
     }
 
     public int count(int e) {
-        return filter[e % filter.length];
+        return filter[getIndex(e)];
     }
 
     public int count(Object e) {
@@ -27,10 +27,14 @@ public class CountingFilterImpl implements CountingFilter {
     }
     
     public void remove(int e) {
-        filter[e % filter.length]--;
+        filter[getIndex(e)]--;
     }
 
     public void remove(Object e) {
         this.remove(e.hashCode());
+    }
+
+    private int getIndex(int e) {
+        return Math.abs(e % filter.length);
     }
 }
