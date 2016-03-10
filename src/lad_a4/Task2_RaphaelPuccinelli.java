@@ -221,6 +221,7 @@ public class Task2_RaphaelPuccinelli<E extends Comparable<E>> implements SortedL
      */
     @Override
     public boolean equals(Object o) {
+
         Task2_RaphaelPuccinelli list = (Task2_RaphaelPuccinelli) o;
         return this.hashCode() == list.hashCode() && o instanceof Task2_RaphaelPuccinelli;
     }
