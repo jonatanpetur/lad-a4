@@ -1,5 +1,7 @@
 package lad_a4;
 
+import javax.tools.JavaCompiler;
+
 public class CountingFilterImpl implements CountingFilter {
 
     private int[] filter;
@@ -35,6 +37,7 @@ public class CountingFilterImpl implements CountingFilter {
     }
 
     private int getIndex(int e) {
+
         return Math.abs(e % filter.length);
     }
 }
