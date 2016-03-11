@@ -19,7 +19,7 @@ public class Task2_Test {
         SortedList avt2 = new Task2_AxelVerner<>();
         System.out.println("Resulting hashcode " + hashCodeTester(avt2));
 
-        //test SS implementation
+        //Test SS implementation
         SortedList sst2 = new Task2_SamiSindi<String>();
         System.out.println("Resulting hashcode " + hashCodeTester(sst2));
 
