@@ -9,19 +9,23 @@ public class Task2_Test {
 
         //test JPP implementation
         SortedList jpt2 = new Task2_JonatanPetursson<String>();
-        System.out.println("Resulting hashcode " + hashCodeTester(jpt2));
+        System.out.println("Jonatan resulting hashcode " + hashCodeTester(jpt2));
 
         //test RP implementation
         SortedList rpt2 = new Task2_RaphaelPuccinelli<String>();
-        System.out.println("Resulting hashcode " + hashCodeTester(rpt2));
+        System.out.println("Raphael resulting hashcode " + hashCodeTester(rpt2));
+
+        //test AV implementation
+        SortedList gct2 = new Task2_GeoffreyChen<>();
+        System.out.println("Geoffrey resulting hashcode " + hashCodeTester(gct2));
 
         //test AV implementation
         SortedList avt2 = new Task2_AxelVerner<>();
-        System.out.println("Resulting hashcode " + hashCodeTester(avt2));
+        System.out.println("Axel resulting hashcode " + hashCodeTester(avt2));
 
         //Test SS implementation
         SortedList sst2 = new Task2_SamiSindi<String>();
-        System.out.println("Resulting hashcode " + hashCodeTester(sst2));
+        System.out.println("Sami resulting hashcode " + hashCodeTester(sst2));
 
 
     }
