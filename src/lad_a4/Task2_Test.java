@@ -15,6 +15,13 @@ public class Task2_Test {
         SortedList rpt2 = new Task2_RaphaelPuccinelli<String>();
         System.out.println("Resulting hashcode " + hashCodeTester(rpt2));
 
+        //test AV implementation
+        SortedList avt2 = new Task2_AxelVerner<>();
+        System.out.println("Resulting hashcode " + hashCodeTester(avt2));
+
+        //Test SS implementation
+        SortedList sst2 = new Task2_SamiSindi<String>();
+        System.out.println("Resulting hashcode " + hashCodeTester(sst2));
 
 
     }
