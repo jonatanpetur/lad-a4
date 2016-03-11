@@ -20,7 +20,7 @@ public class Task2_Test {
         System.out.println("Resulting hashcode " + hashCodeTester(avt2));
 
         //test SS implementation
-        SortedList sst2 = new Task2_SamiSindi<>();
+        SortedList sst2 = new Task2_SamiSindi<String>();
         System.out.println("Resulting hashcode " + hashCodeTester(sst2));
 
 
