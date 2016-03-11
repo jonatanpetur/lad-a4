@@ -19,11 +19,6 @@ public class Task2_Test {
         SortedList avt2 = new Task2_AxelVerner<>();
         System.out.println("Resulting hashcode " + hashCodeTester(avt2));
 
-
-        //test GC implementation
-        SortedList gft2 = new Task2_GeoffreyChen<String>();
-        System.out.println("Resulting hashcode " + hashCodeTester(rpt2));
-
     }
 
     public static int hashCodeTester(SortedList sortedList)
