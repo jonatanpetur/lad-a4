@@ -201,7 +201,8 @@ public class Task2_AxelVerner<E extends Comparable<E>> implements SortedList<E> 
      * To decrease chance of collisions a prime value of 92821 is used
      * since it insures a smallest collision chance of -46272,46016.
      * The method recursively calls itself with "this.get(i).hashCode()" on line 212.
-     * Complexity is O(n) where n = count assuming the passed string is a constant.
+     * Complexity is O(n)+k where n = count assuming the passed string is a constant (k), the constant can be ignored
+     * and final complexity would be on the order of (n).
      */
 
 
