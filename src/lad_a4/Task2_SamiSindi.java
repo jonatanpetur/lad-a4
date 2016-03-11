@@ -202,7 +202,7 @@ public class Task2_SamiSindi<E extends Comparable<E>> implements SortedList<E> {
     /**
      * * This method loops a list and returns the hashcode for each element and return 0 if the list is empty.
      * 0 is the hash value of null
-     * average case complexity for this hash code is O(n/m) , n is the number of items and m is the size of the sting.
+     * Average case complexity for this hash code is O(n/m) , n is the number of items and m is the size of the sting.
      * @return
      */
     @Override
