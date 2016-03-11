@@ -8,6 +8,7 @@ public class CountingFilterImpl implements CountingFilter {
 
     /** Initiates a counting filter, the capacity indicates how much memory can be used
      * (memory usage must be O(capacity)) */
+
     public CountingFilterImpl(int capacity){
         filter = new int[capacity];
     }
